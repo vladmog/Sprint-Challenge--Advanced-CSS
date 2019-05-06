@@ -1,1 +1,36 @@
 // Mixins Here
+
+.navStyle() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerImgStyle() {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+.buttonStyle (@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    background-color: #091426;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    color: white;
+    font-size: 1.6rem;
+    &:hover {
+        color: @buttonBackColor;
+        background-color: @buttonFontColor;
+        border: solid black 1px;
+    }
+    @media @phone {
+        width: 100%;
+        height: 60px;
+    }
+
+}

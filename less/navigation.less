@@ -1,1 +1,29 @@
 // Navigation code here
+@keyframes animation {
+    0% {color: red;}
+    50% {color: green;}
+    100% {color: yellow;}
+  }
+
+.navArea {
+   
+    .navStyle();
+    h1{
+        font-size: 3.2rem;
+
+    }
+    nav{
+        font-size: 1.6rem;
+        padding-top: 15px;
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 0px 10px;
+            &:hover {
+                animation-name: animation;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+            }
+        }
+    }
+}

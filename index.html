@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
@@ -19,9 +20,19 @@
  <!-- navigation code here -->
 
   <div class="container home">
-
+    <div class="navArea">
+      <h1>Space Walkers</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
     <header class="intro">
        <!-- image code here -->
+       <img class="headerImg" src="img/main-header.png"/>
 
       <h2>Lift Off</h2>
     
@@ -61,7 +72,17 @@
       </div>
 
     </section>
-
+    <h3>Subscribe to Space Walkers Magazine</h3>
+    <form>
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      <input type="radio" name="sub" value="monthly" checked>Monthly subscription ($5.00/month)<br>
+      <input type="radio" name="sub" value="yearly">Yearly subscription ($40.00/year)<br>
+      <input type="radio" name="sub" value="lifetime">Lifetime subscription (enlist in NASA)<br>
+      <input type="submit" value="Submit">
+    </form>
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
